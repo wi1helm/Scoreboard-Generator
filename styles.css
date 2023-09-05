@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+#minecraft-container {
+    width: 100%;
+    height: 99.8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.minecraft-sidebar {
+    background-color: rgba(128, 128, 128, 0.6); /* Gray background with opacity */
+    min-width: 100px; /* Minimum width to prevent sidebar from becoming too narrow */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow for depth */
+
+}
+
+.sidebar-title {
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.8); /* Gray background with opacity */
+    font-size: 20px;
+    font-weight: bold;
+    color: yellow; /* Adjust the color to match your Minecraft style */
+    margin: 0;
+    padding: 10px;
+}
+
+.title-text {
+    color: yellow; /* Adjust the color to match your Minecraft style */
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    white-space: nowrap; /* Prevent line breaks within the title */
+    outline: none; /* Remove the default focus outline (optional) */
+}
+
+.sidebar-entries {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-entry {
+    display: flex;
+    flex-direction: row-reverse; /* Reverse the order of elements */
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 16px;
+    color: white; /* Adjust text color */
+    margin-bottom: 2px;
+    padding: 5px;
+    padding-top: 1px;
+    padding-bottom: 0;
+    white-space: nowrap; /* Prevent line breaks within text */
+}
+
+.row-number {
+    color: red; /* Color for row numbers */
+    font-weight: bold;
+    margin-right: 3px; /* Space between row number and row text */
+}
+.row-number-fake {
+    color: red; /* Color for row numbers */
+    font-weight: bold;
+    margin-left: 0px; /* Space between row number and row text */
+}
+
+
+
+.row-text {
+    flex-grow: 1;
+    color: white; /* Adjust text color */
+    /* Add other styles like bold, italic, etc. here */
+    padding: 5px;
+    padding-top: 0;
+    padding-bottom: 0;
+    border: none; /* Set a transparent border initially */
+    
+}
+
+.row-text:focus {
+    border: none; /* Set the border when the input is in focus */
+    outline: none; /* Remove the default focus outline (optional) */
+}
