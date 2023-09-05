@@ -4,6 +4,9 @@ body {
     background-color: #f0f0f0;
     font-family: Arial, sans-serif;
 }
+#generate-init-button{
+    margin-bottom: 50px;
+}
 
 #minecraft-container {
     width: 100%;
@@ -11,6 +14,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .minecraft-sidebar {
